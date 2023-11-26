@@ -324,7 +324,46 @@ nav .active {
 }
 
 .service-checkbox {
+    margin-top: 12px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.agree-checkbox {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    left: 20px;
+    opacity: 0;
+}
+
+.agree-check-icon {
+    margin-right: 8px;
+    fill: none;
+    border: 2px solid var(--NAVY-BLUE);
+    border-radius: 2px;
+    transition: 250ms;
+    transition-property: border-color, background-color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-checkbox .agree-checkbox:focus + .agree-check-icon,
+.service-checkbox .agree-checkbox:checked:focus + .agree-check-icon {
+    outline: 2px solid #212121
+}
+
+.service-checkbox .agree-checkbox:checked + .agree-check-icon {
+    background-color: var(--IRIS);
+    border-color: var(--IRIS);
+    fill: white;
+    outline: none;
+    stroke: white;
+    stroke-width: 0.2;
+}
+
+.agree-text {
+    font-size: 12px;
 }
 
 .service-checkbox a {
