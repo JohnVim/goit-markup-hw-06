@@ -57,6 +57,37 @@
             <div class="modal is-hidden" data-modal>
                 <div class="data-modal">
                     <button type="button" data-modal-close>&times;</button>
+                    <h4>Leave your contacts and we will call you back</h4>
+
+                    <form class="service-form">
+                        <label for="name" class="service-label">
+                            <span class="input-label">Name</span>
+                            <input type="text" class="service-input"/>
+                            <svg width="18" height="18" class="service-icon">
+                                <use href="./images/icons.svg#person"></use>
+                            </svg>
+                        </label>
+                        <label for="phone" class="service-label">
+                            <span class="input-label">Phone</span>
+                            <input type="text" class="service-input"/>
+                            <svg width="18" height="18" class="service-icon">
+                                <use href="./images/icons.svg#phone"></use>
+                            </svg>
+                        </label>
+                        <label for="email" class="service-label">
+                            <span class="input-label">Email</span>
+                            <input type="text" class="service-input"/>
+                            <svg width="18" height="18" class="service-icon">
+                                <use href="./images/icons.svg#email"></use>
+                            </svg>
+                        </label>
+                        
+                        <label for="comments" class="service-label">
+                            <span class="input-label">Comment</span>
+                            <textarea class="service-input service-input-textarea" name="" id="" rows="8" placeholder="Text input"></textarea>
+                        </label>
+                    </form>
+
                 </div>
             </div>
         </section>
@@ -318,14 +349,22 @@
     <footer>
         <!-- Logo Section -->
         <section class="footer-text">
-            <!-- LOGO -->
-            <div>
+            <!-- <div>
                 <div class="logo">
                     <a href="index.html">
                         <p class="logo-text"><b><span>WEB</span>STUDIO</b></p>
                     </a>
                 </div>
-                <!-- Description -->
+                <div class="description">
+                    <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+                </div>
+            </div> -->
+            <div class="logo-section">
+                <div class="logo">
+                    <a href="index.html">
+                        <p class="logo-text"><b><span>WEB</span>STUDIO</b></p>
+                    </a>
+                </div>
                 <div class="description">
                     <p>Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
                 </div>
@@ -353,7 +392,14 @@
                                     <use href="./images/icons.svg#linkedin-1"></use>
                                 </svg>
                             </a>
-                        </div>
+                </div>
+            </div>
+            <div class="footer-subscribe">
+                <p>Subscribe</p>
+                <form>
+                    <input class="subscribe-textarea" type="text" placeholder="Email">
+                    <button class="subscribe-btn" type="submit">Subscribe <svg width="20px" height="20px"><use href="./images/icons.svg#send"></use></svg></button>
+                </form>
             </div>
         </section>
         <!-- End of Logo Section -->
