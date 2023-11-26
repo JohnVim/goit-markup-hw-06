@@ -60,6 +60,7 @@ footer .logo .logo-text{
 
 .footer-text {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .footer-text .description {
@@ -81,16 +82,19 @@ footer .logo .logo-text{
 }
 
 .subscribe-textarea {
-    padding: 8px 16px;
+    margin-top: 12px;
+    padding: 11px 8px;
+    background-color: rgba(0,0,0,0);
     border: 1px solid #2E2F42;
+    border-color: var(--WHITE);
     border-radius: 4px;
-    fill-opacity: 0;
     transition: 250ms;
     transition-property: color, border-color, background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-btn {
+    margin-left: 24px;
     padding: 8px 24px;
 }
 
@@ -241,10 +245,9 @@ nav .active {
     padding: 25px;
     border-radius: 4px;
     width: 408px;
-    height: 584px;
 }
 
-.data-modal button {
+.data-modal .data-modal-btn {
     line-height: 0;
     font-size: 24px;
     padding: 0;
@@ -258,6 +261,10 @@ nav .active {
     margin-top: 0px;
     margin-bottom: 10px;
     display: block;
+}
+
+.send-btn {
+    padding: 16px 32px;
 }
 
 .is-hidden {
@@ -314,6 +321,14 @@ nav .active {
     transition: 250ms;
     transition-property: color, border-color, background-color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-checkbox {
+    display: flex;
+}
+
+.service-checkbox a {
+    text-decoration: underline;
 }
 
 .about {
